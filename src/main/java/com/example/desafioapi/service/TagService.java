@@ -33,7 +33,7 @@ public class TagService {
 
     }
 
-    public List<Tag> buscarTodos(){
+    public List<Tag> buscarTodos() {
         return tagRepository.findAll();
     }
 }

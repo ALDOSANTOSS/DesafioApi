@@ -1,7 +1,6 @@
 package com.example.desafioapi.service;
 
 import com.example.desafioapi.entity.Admin;
-import com.example.desafioapi.entity.User;
 import com.example.desafioapi.repository.AdminRepository;
 import org.springframework.stereotype.Service;
 
@@ -26,12 +25,11 @@ public class AdimService {
         adminRepository.deleteById(id);
     }
 
-    public Admin buscarIdAdmin(Long id) throws Exception{
+    public Admin buscarIdAdmin(Long id)throws Exception{
         Optional<Admin> admin = adminRepository.findById(id);
-        if (admin.isEmpty()){
+        if(admin.isEmpty()){
             throw new Exception("Admin não encontrado");
-        }
-        return admin.get();
+        }return admin.get();
     }
 
     public List<Admin> buscarTodos(){

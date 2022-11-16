@@ -12,6 +12,9 @@ public class Admin {
     private String email;
     private String password;
 
+    public Admin() {
+    }
+
     public Admin(String email, String password) {
     }
 

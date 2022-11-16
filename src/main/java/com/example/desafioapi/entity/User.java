@@ -1,6 +1,7 @@
 package com.example.desafioapi.entity;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "tb_user")
@@ -11,6 +12,11 @@ public class User {
     private Long id;
     private String email;
     private String password;
+
+    @ManyToMany
+    private List<Tag> tags;
+
+    private String perfil;
 
     public User() {
     }

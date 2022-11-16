@@ -12,7 +12,6 @@ public class AdimService {
 
     private final AdminRepository adminRepository;
 
-
     public AdimService(AdminRepository adminRepository) {
         this.adminRepository = adminRepository;
     }

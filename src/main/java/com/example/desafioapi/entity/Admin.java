@@ -12,7 +12,7 @@ public class Admin {
     private String email;
     private String password;
 
-    public Admin() {
+    public Admin(String email, String password) {
     }
 
     public Admin(Long id, String email, String password) {

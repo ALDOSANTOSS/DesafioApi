@@ -12,7 +12,7 @@ public class Tag {
     private Long id;
     private String name;
 
-    public Tag() {
+    public Tag(String name) {
     }
 
     public Tag(Long id, String name) {
